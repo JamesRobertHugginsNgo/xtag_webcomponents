@@ -1,5 +1,5 @@
 import autoPrefixer from 'gulp-autoprefixer';
-import babel from 'gulp-babel';
+// import babel from 'gulp-babel';
 import cssNano from 'gulp-cssnano';
 import debug from 'gulp-debug';
 import del from 'del';
@@ -11,7 +11,7 @@ import mustache from 'gulp-mustache';
 import rename from 'gulp-rename';
 import sass from 'gulp-sass';
 import sourceMaps from 'gulp-sourcemaps';
-import uglify from 'gulp-uglify';
+// import uglify from 'gulp-uglify';
 import webDependencies from 'gulp-web-dependencies';
 import webServer from 'gulp-webserver';
 
@@ -78,13 +78,13 @@ export function buildJs() {
 		.pipe(mustache())
 		.pipe(esLint())
 		.pipe(esLint.format())
-		.pipe(babel())
+		// .pipe(babel())
 		.pipe(gulp.dest(buildJsDest))
-		.pipe(rename((path) => path.basename += '.min'))
-		.pipe(sourceMaps.init())
-		.pipe(uglify())
-		.pipe(sourceMaps.write('.'))
-		.pipe(gulp.dest(buildJsDest));
+		// .pipe(rename((path) => path.basename += '.min'))
+		// .pipe(sourceMaps.init())
+		// .pipe(uglify())
+		// .pipe(sourceMaps.write('.'))
+		// .pipe(gulp.dest(buildJsDest));
 }
 
 ////////////////////////////////////////////////////////////////////////////////

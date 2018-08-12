@@ -48,6 +48,7 @@
     "bootstrap": "^4.1.1",
     "gulp-debug": "^4.0.0",
     "jquery": "^3.3.1",
-    "underscore": "^1.9.1"
+    "underscore": "^1.9.1",
+    "x-tag": "^2.0.9-alpha"
   }
 }
